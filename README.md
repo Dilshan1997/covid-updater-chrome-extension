@@ -1,0 +1,1 @@
+# covid-updater-chrome-extension
