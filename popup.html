@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-19 Summary</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap4.min.css"> 
+  <link rel="stylesheet" href="popup.css">
+
+
+</head>
+<body class=" text-center">
+  <div class=" bg-dark" class=" container">
+     <div class=" bg-dark card">
+              <div class=" card-img"><img src="./icon.png" width="50" height="50"></div>
+              <div class="card-body" >
+                <h1 class="card-title text-uppercase text-light">Global Summary</h1>
+                <div id="exTab1" class="container">	
+                  <ul  class="nav nav-pills row">
+                        <li class="active col-4">
+                          <button  href="#1a" data-toggle="tab" class=' btn btn-primary btn-custom'>Total</button>
+                        </li>
+                        <li class=" col-4">
+                          <button href="#2a" data-toggle="tab" class=" btn btn-primary btn-custom" >Today</button>
+                        </li>
+                        <li class=" col-4">
+                          <button href="#3a" data-toggle="tab" class=" btn btn-primary btn-custom" >Local</button>
+                        </li>
+                  </ul>
+                </div>
+                <div class="tab-content clearfix">
+                  <div class=" tab-pane active" id="1a">
+                    <div class=" row bg-warning m-0 ">
+                    <div class="col-9">
+                      <h2 >Total Confirmed Cases</h2></span> <br>
+                      <h2 id="tc" class="mb-4"></h2>
+                    </div>
+                    <div  class="col-3 mt-5">
+                     <span id="c_arrow"></span>%
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row bg-success m-0 ">
+            <div class=" col-9">
+              <h2>Total Recovered & Discharged</h2><br>
+              <h2 id="tr" class=" mb-4"></h2> 
+            </div>
+            <div  class="col-3 mt-5">
+              <span id="r_arrow"></span>%
+            </div>
+          </div>
+          <br>
+          <div class="row bg-danger m-0 " >
+              <div class="col-9 ">
+                <h2>Total Deaths</h2>
+              <h2 id="td"></h2>
+              </div>
+              <div class="col-3 mt-5">
+                <span id="d_arrow"></span>%
+              </div>
+            </div>
+            <br>
+                  </div>
+                  <div class=" tab-pane" id="2a">
+                    <div class=" bg-warning">
+                      <h2 >Today Confirmed Cases</h2></span> <br>
+                      <h2 id="ttc" class=" mb-4"></h2>
+                    </div>
+            <div class=" bg-success">
+              <h2>Today Recovered & Discharged</h2><br>
+              <h2 id="ttr" class=" mb-4"></h2> 
+            </div>
+              <div class=" bg-danger">
+                <h2>Today Deaths</h2>
+              <h2 id="ttd"></h2>
+              </div>
+                  </div>
+       
+                  <div class=" tab-pane" id="3a">
+                    <div class=" bg-warning">
+                      <h2 >Total Confirmed Cases</h2></span> <br>
+                      <h2 id="lc" class=" mb-4"></h2>
+                    </div>
+            <div class=" bg-success">
+              <h2>Total Recovered & Discharged</h2><br>
+              <h2 id="lr" class=" mb-4"></h2> 
+            </div>
+              <div class=" bg-danger">
+                <h2>Total Deaths</h2>
+              <h2 id="ld"></h2>
+              </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+  </div>
+  
+  <footer>
+    
+  <!-- Copyright -->
+  <div class="text-center py-3">© 2020 Copyright:
+    <a href="#">Dila</a>
+  </div>
+  <!-- Copyright -->
+<div>
+  update &nbsp;<span id="dd"></span>
+  
+</div>
+<div id="banner-message">
+  <p>Your country - <span id="btn"></span></p>
+
+</div>
+  </footer>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./popup.js" type="text/javascript"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+</html>

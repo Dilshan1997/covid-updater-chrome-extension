@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Covid-19 Summary",
+  "description": "Display the Covid summary Global and Local. It detect your Ip address automatically and display the local summary. If use VPN It show the details related to that that ipa address. ",
+  "version": "0.3",
+  "browser_action": {
+    "default_icon": "browser_action_icon.png",
+    "default_title": "Covid-19 Summary",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+ 
+  
+}
+
