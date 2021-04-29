@@ -120,7 +120,7 @@ $("document").ready(function () {
     var nr=parseInt(new_result)
     console.log(nr,pr)
     if(nr>pr){
-      return Math.round((nr-pr)*100/(nr+pr))
+      return "+"+Math.round((nr-pr)*100/(nr+pr))
       // console.log((nr-pr)*100/(nr+pr))
     }
     else if(nr<pr){
