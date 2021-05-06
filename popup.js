@@ -131,6 +131,16 @@ $("document").ready(function () {
     }
  
   }
- 
+$(tcp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[0])
+$(trp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[1])
+$(tdp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[2])
+
+ function percentage(c,r,d){
+var all=c+r+d
+con_per=(c*100/all).toFixed(2)
+rec_per=(r*100/all).toFixed(2)
+death_per=(d*100/all).toFixed(2)
+return [con_per,rec_per,death_per]
+ }
 });
 
