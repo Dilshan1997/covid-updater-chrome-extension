@@ -134,7 +134,10 @@ $("document").ready(function () {
 $(tcp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[0])
 $(trp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[1])
 $(tdp).html(percentage(summary.Global.TotalConfirmed,summary.Global.TotalRecovered,summary.Global.TotalDeaths)[2])
-
+$(lcp).html(percentage(parseInt($(lc).html().toString().replace(/,/, '')),parseInt($(lr).html().toString().replace(/,/, '')),parseInt($(ld).html().toString().replace(/,/, '')))[0])
+$(lrp).html(percentage(parseInt($(lc).html().toString().replace(/,/, '')),parseInt($(lr).html().toString().replace(/,/, '')),parseInt($(ld).html().toString().replace(/,/, '')))[1])
+$(ldp).html(percentage(parseInt($(lc).html().toString().replace(/,/, '')),parseInt($(lr).html().toString().replace(/,/, '')),parseInt($(ld).html().toString().replace(/,/, '')))[2])
+console.log()
  function percentage(c,r,d){
 var all=c+r+d
 con_per=(c*100/all).toFixed(2)
